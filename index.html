@@ -3,147 +3,383 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iKi Logistik</title>
-  <link rel="shortcut icon" href="assets/icon/icon.png" type="image/x-icon">
+  <title>iKi Logistik - Pengiriman Paket Secepat iKilat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/icon/icon-02.png" type="image/x-icon">
 </head>
-<body style="margin:0; padding:0;">
-<table border="0" width="768" align="center" cellspacing="0">
-  <tr>
-    <td colspan="12">
-      <header>
-        <img src="assets/img/brand.png" alt="nama brand iKi">
-      </header>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="12">
-      <nav>
-        <a href="index.html">Beranda</a> |
-        <a href="#track">Track</a> |
-        <a href="#cabang">Cabang</a> |
-        <a href="#afiliasi">Afiliasi</a> |
-        <a href="about.html">Tentang</a>
-      </nav>
-    </td>
-  </tr>
-  <tr bgcolor="#F7941D">
-    <td colspan="12">
-      <img src="assets/img/banner.png" alt="banner" width="100%">
-    </td>
-  </tr>
-  <tr id="track" bgcolor="#F7941D">
-    <td></td>
-    <td colspan="5">
-      <br/>
-      <strong>Track Paket</strong>
-      <form action="" method="POST">
-        <input type="text" required autocomplete="off" placeholder="Masukan Resi">
-        <button type="submit">Lacak</button>
-      </form>
-      <br/>
-    </td>
-    <td colspan="5">
-      <br/>
-      <strong>Cek Ongkir</strong>
-      <form action="" method="POST">
-        <input type="text" required autocomplete="off" list="kota" placeholder="Kota Asal"  >
-        <input type="text" required autocomplete="off" list="kota" placeholder="Kota Tujuan">
-        <datalist id="kota">
-          <option value="Bogor">Bogor</option>
-          <option value="Jakarta">Jakarta</option>
-          <option value="Depok">Depok</option>
-          <option value="Bandung">Bandung</option>
-          <option value="Tangerang">Tangerang</option>
-        </datalist>
-        <button type="submit">Cek</button>
-      </form>
-      <br/>
-    </td>
-    <td></td>
-  </tr>
-  <tr id="cabang">
-    <td colspan="12" align="center">
-      <header>
-        <h2>Ekspansi iKi Logistik untuk mempermudah pengantaran dan penjemputan paket Anda</h2>
+<body id="top">
+<!-- Start Navigasi Bar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="row a-center">
+      <div class="nav-logo">
+        <a href="#">
+          <img src="assets/img/brand-03.png" alt="Logo iKi" id="brand">
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a href="#top" class="nav-btn">BERANDA</a>
+        <a href="#track" class="nav-btn">LACAK PENGIRIMAN</a>
+        <a href="#cabang" class="nav-btn">CABANG</a>
+        <a href="#afiliasi" class="nav-btn">AFILIASI</a>
+        <a href="#top" class="nav-btn">TENTANG</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+<!-- Start Header Hero -->
+<header class="header_hero">
+  <!-- Gambar hero disini -->
+  <img src="assets/img/banner2-02.png" class="img-full header_hero_img" alt="Banner iKi Logistik">
+  <div class="container">
+    <div class="p-relative">
+      <div class="hero_content p-absolute col-6">
+        <img src="assets/img/iki-03.png" alt="" class="img-full-h">
+        <h1 class="mb-1rem">Membantu bisnis Anda<br/>dalam menghadapi tantangan</h1>
+        <p class="mb-1rem">Ketika banyak sekali industri dan dunia usaha yang berubah akibat COVID-19, ada hal yang tetap tidak berubah Kami disini untuk membantu Anda. Temukan bantuan dan sumber layanan berita COVID-19 disini.</p>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Header Hero -->
+
+<!-- Start Tracking Section Row -->
+<section class="sect_track" id="track">
+  <div class="container">
+    <div class="row">
+      <div class="track_form col-4">
+        <h2 class="no-mt mb-05rem">Lacak Kiriman</h2>
+        <form action="#" method="GET">
+          <div class="form-row">
+            <input type="text" name="resi" class="form-mod mr-05rem" placeholder="No. Resi">
+            <button type="submit" class="btn">Lacak</button>
+          </div>
+        </form>
+      </div>
+      <div class="track_form col-8">
+        <h2 class="no-mt mb-05rem">Cek Tarif Pengiriman</h2>
+        <form action="#" method="GET">
+          <div class="form-row">
+            <input type="text" list="asal" name="asal" class="form-mod mr-05rem" placeholder="Kota Asal" autocomplete="off" required>
+            <datalist id="asal">
+              <option value="Bogor">Bogor</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Depok">Depok</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Tangerang">Tangerang</option>
+					  </datalist>
+            <input type="text" list="destinasi" name="dest" class="form-mod mr-05rem" placeholder="Destinasi" autocomplete="off" required>
+            <datalist id="destinasi">
+              <option value="Bogor">Bogor</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Depok">Depok</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Tangerang">Tangerang</option>
+					  </datalist>
+            <button type="submit" class="btn">Hitung</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Tracking Section Row -->
+
+<!-- Start Cabang iKi -->
+<section class="sect_cabang" id="cabang">
+  <div class="container">
+    <div class="cabang_inner">
+      <header class="t-center">
+        <h2 class="mb-1rem">Ekspansi iKi Logistik untuk mempermudah pengantaran dan penjemputan paket Anda</h2>
       </header>
       <figure>
-        <img src="assets/img/cabang.png" alt="Map Cabang" width="100%">
-        <figcaption>Cabang iKi Logistik Pulau Jawa : Banten, Jakarta, Jawa Barat, Jawa Tengah, Yogyakarta, Jawa Timur</figcaption>
+        <img src="assets/img/cabang-05.png" alt="Map Cabang iKi Logistik" class="img-full mt-1rem">
+        <figcaption class="t-center">Cabang iKi Logistik Pulau Jawa : Banten, Jakarta, Jawa Barat, Jawa Tengah, Yogyakarta, Jawa Timur</figcaption>
       </figure>
-    </td>
-  </tr>
-  <tr id="afiliasi">
-    <td colspan="12" align="center">
-      <header>
-        <h2>Raih Keuntungan, Mudah & Cepat! Daftar Program Affiliasi iKi Logistik</h2>
-        <p>Program Afiliasi adalah sebuah program memberikan komisi atau imbalan kepada Anda yang diberikan oleh iKi Logistik sebagai salah satu kontribusi Anda membantu dalam berkolaborasi untuk perkembangan yang lebih baik. iKi Logistik mengajak dan merekomendasikan anda mengikuti program afiliasi penjemputan paket toko anda untuk mendapatkan layanan yang terbaik, tercepat, dan prioritas.</p>
+    </div>
+  </div>
+</section>
+<!-- End Cabang iKi -->
+
+<!-- Start Afiliasi Package -->
+<section class="sect_afiliasi" id="afiliasi">
+  <div class="container">
+    <div class="afiliasi_inner">
+      <header class="t-center">
+        <h2 class="mb-1rem">Raih Keuntungan, Mudah & Cepat! Daftar Program Affiliasi iKi Logistik</h2>
+        <p class="mb-1rem">Program Afiliasi adalah sebuah program memberikan komisi atau imbalan kepada Anda yang diberikan oleh iKi Logistik sebagai salah satu kontribusi Anda membantu dalam berkolaborasi untuk perkembangan yang lebih baik. iKi Logistik mengajak dan merekomendasikan anda mengikuti program afiliasi penjemputan paket toko anda untuk mendapatkan layanan yang terbaik, tercepat, dan prioritas.</p>
       </header>
-      <table border="1" bordercolor="#181818" width="100%" cellspacing="0" cellpadding="5">
-        <tr bgcolor="#F7941D">
-          <th>Paket</th>
-          <th>Fasilitas</th>
-          <th>Harga</th>
-          <th>Aksi</th>
-        </tr>
-        <tr>
-          <td>Paket Micro</td>
-          <td>2 Motor Penjemputan, 3 Komputer, 3 Printer, 1000 Pcs Plastik, 10 Karyawan</td>
-          <td>Rp. 56.000.000</td>
-          <td><a href="">Hubungi</a></td>
-        </tr>
-        <tr>
-          <td>Paket Middle</td>
-          <td>3 Motor Penjemputan, 3 Komputer, 3 Printer, 1000 Pcs Plastik, 10 Karyawan</td>
-          <td>Rp. 60.000.000</td>
-          <td><a href="">Hubungi</a></td>
-        </tr>
-        <tr>
-          <td>Paket Optimist</td>
-          <td>4 Motor Penjemputan, 4 Komputer, 4 Printer, 1000 Pcs Plastik, 15 Karyawan</td>
-          <td>Rp. 120.000.000</td>
-          <td><a href="">Hubungi</a></td>
-        </tr>
-        <tr>
-          <td>Paket Agent</td>
-          <td>1 Mobil Van, 4 Komputer, 4 Printer, 1000 Pcs Plastik, 15 Karyawan</td>
-          <td>Rp. 180.000.000</td>
-          <td><a href="">Hubungi</a></td>
-        </tr>
-        <tr>
-          <td>Paket Pro</td>
-          <td>2 Mobil Van, 4 Komputer, 4 Printer, 1000 Pcs Plastik, 20 Karyawan</td>
-          <td>Rp. 250.000.000</td>
-          <td><a href="">Hubungi</a></td>
-        </tr>
-        <tr>
-          <td>Paket Advance</td>
-          <td>3 Mobil Van, 4 Komputer, 4 Printer, 1000 Pcs Plastik, 30 Karyawan</td>
-          <td>Rp. 300.000.000</td>
-          <td><a href="">Hubungi</a></td>
-        </tr>
-      </table>
-    </td>
-  <tr>
-    <td colspan="12">
-      <p>Syarat dan Ketentuan</p>
-      <ol type="1">
-        <li>Harga bersifat <i>Subscription</i> dan dibayar tiap bulan</li>
-        <li>Afiliater tidak boleh memutus kontrak sebelum masa kontrak habis</li>
-        <li>Afiliater akan mendapatkan dukungan dan alat yang diperlukan dari iKi Logistik</li>
-        <li>Untuk bergabung, minimal laba bersih perusahaan afiliater yaitu Rp. 500.000.000</li>
-      </ol>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="6">
-      <footer>
-        <br/>
-        &copy; 2020 iKi Logistik
-        <br/>
-        <br/>
-      </footer>
-    </td>
-  </tr>
-</table>
+      <div class="afiliasi_wrapper">
+        <div class="row">
+          <div class="col-4">
+            <div class="afiliasi_card_cover mt-1rem">
+              <h3 class="t-center">Paket Micro</h3>
+              <h3 class="price f-display f-bold t-center">Rp. 56.000.000</h3>
+              <table class="table mt-1rem">
+                <tr class="f-bold">
+                  <td>No. </td>
+                  <td>Fasilitas</td>
+                  <td class="t-right">Jumlah</td>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Motor Penjemputan</td>
+                  <td class="t-right">2 Motor</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Komputer</td>
+                  <td class="t-right">3 Komputer</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cetak Print Resi</td>
+                  <td class="t-right">3 Printer</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Plastik</td>
+                  <td class="t-right">1000 Pcs</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Karyawan</td>
+                  <td class="t-right">10 Karyawan</td>
+                </tr>
+              </table>
+              <a href="#" class="t-center d-block btn w-100 mt-1rem">Lihat Syarat dan Ketentuan</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="afiliasi_card_cover mt-1rem">
+              <h3 class="t-center">Paket Yes</h3>
+              <h3 class="price f-display f-bold t-center">Rp. 76.000.000</h3>
+              <table class="table mt-1rem">
+                <tr class="f-bold">
+                  <td>No. </td>
+                  <td>Fasilitas</td>
+                  <td class="t-right">Jumlah</td>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Motor Penjemputan</td>
+                  <td class="t-right">4 Motor</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Komputer</td>
+                  <td class="t-right">5 Komputer</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cetak Print Resi</td>
+                  <td class="t-right">5 Printer</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Plastik</td>
+                  <td class="t-right">5000 Pcs</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Karyawan</td>
+                  <td class="t-right">15 Karyawan</td>
+                </tr>
+              </table>
+              <a href="#" class="t-center d-block btn w-100 mt-1rem">Lihat Syarat dan Ketentuan</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="afiliasi_card_cover mt-1rem">
+              <h3 class="t-center">Paket Optimist</h3>
+              <h3 class="price f-display f-bold t-center">Rp. 88.000.000</h3>
+              <table class="table mt-1rem">
+                <tr class="f-bold">
+                  <td>No. </td>
+                  <td>Fasilitas</td>
+                  <td class="t-right">Jumlah</td>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Motor Penjemputan</td>
+                  <td class="t-right">5 Motor</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Komputer</td>
+                  <td class="t-right">5 Komputer</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Cetak Print Resi</td>
+                  <td class="t-right">5 Printer</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Plastik</td>
+                  <td class="t-right">7500 Pcs</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Karyawan</td>
+                  <td class="t-right">25 Karyawan</td>
+                </tr>
+              </table>
+              <a href="#" class="t-center d-block btn w-100 mt-1rem">Lihat Syarat dan Ketentuan</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="afiliasi_card_cover mt-1rem">
+              <h3 class="t-center">Paket Agent</h3>
+              <h3 class="price f-display f-bold t-center">Rp. 122.000.000</h3>
+              <table class="table mt-1rem">
+                <tr class="f-bold">
+                  <td>No. </td>
+                  <td>Fasilitas</td>
+                  <td class="t-right">Jumlah</td>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Motor Penjemputan</td>
+                  <td class="t-right">2 Motor</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Mobil Penjemputan</td>
+                  <td class="t-right">1 Mobil Van</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Komputer</td>
+                  <td class="t-right">6 Komputer</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Cetak Print Resi</td>
+                  <td class="t-right">6 Printer</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Plastik</td>
+                  <td class="t-right">70000 Pcs</td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Karyawan</td>
+                  <td class="t-right">40 Karyawan</td>
+                </tr>
+              </table>
+              <a href="#" class="t-center d-block btn w-100 mt-1rem">Lihat Syarat dan Ketentuan</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="afiliasi_card_cover mt-1rem">
+              <h3 class="t-center">Paket Boss</h3>
+              <h3 class="price f-display f-bold t-center">Rp. 130.000.000</h3>
+              <table class="table mt-1rem">
+                <tr class="f-bold">
+                  <td>No. </td>
+                  <td>Fasilitas</td>
+                  <td class="t-right">Jumlah</td>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Motor Penjemputan</td>
+                  <td class="t-right">4 Motor</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Mobil Penjemputan</td>
+                  <td class="t-right">1 Mobil Van</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Komputer</td>
+                  <td>10 Komputer</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Cetak Print Resi</td>
+                  <td class="t-right">10 Printer</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Plastik</td>
+                  <td class="t-right">100000 Pcs</td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Karyawan</td>
+                  <td class="t-right">45 Karyawan</td>
+                </tr>
+              </table>
+              <a href="#" class="t-center d-block btn w-100 mt-1rem">Lihat Syarat dan Ketentuan</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="afiliasi_card_cover mt-1rem">
+              <h3 class="t-center">Paket Advance</h3>
+              <h3 class="price f-display f-bold t-center">Rp. 200.000.000</h3>
+              <table class="table mt-1rem">
+                <tr class="f-bold">
+                  <td>No. </td>
+                  <td>Fasilitas</td>
+                  <td class="t-right">Jumlah</td>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Motor Penjemputan</td>
+                  <td class="t-right">6 Motor</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Mobil Penjemputan</td>
+                  <td class="t-right">2 Mobil Van</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Komputer</td>
+                  <td  class="t-right">15 Komputer</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Cetak Print Resi</td>
+                  <td class="t-right">15 Printer</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Plastik</td>
+                  <td class="t-right">700000 Pcs</td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Karyawan</td>
+                  <td class="t-right">80 Karyawan</td>
+                </tr>
+              </table>
+              <a href="#" class="t-center d-block btn w-100 mt-1rem">Lihat Syarat dan Ketentuan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Afiliasi Package -->
+<footer class="footer">
+  <div class="me">
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rem, nemo fugit atque possimus placeat, ut debitis repellendus earum accusamus sint facere. Ad totam quasi itaque obcaecati distinctio hic voluptate repudiandae deleniti. Sunt consequuntur suscipit et id corporis doloremque corrupti aliquid eveniet fuga fugiat, excepturi, ullam, animi ex veniam assumenda autem optio repellendus libero dolorem. Quia id ad ipsa tempora corrupti totam blanditiis at aliquam accusantium illo sapiente ab ullam ea nobis animi, minus rem? Tenetur modi voluptates nihil libero ipsum expedita saepe sit dolorem voluptate, ipsa voluptas maiores possimus beatae quas officia error, natus quidem iste laudantium magnam inventore.
+    </div>
+  </div>
+  <div class="copy">
+    <div class="container">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+</footer>
 </body>
 </html>
