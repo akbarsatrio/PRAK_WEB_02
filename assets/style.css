@@ -1,0 +1,277 @@
+/* Starter */
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+input::placeholder {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+  font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	background: #000000;
+	/* Jurus Anti Responsive */
+	min-width: 992px;
+}
+
+a {
+	text-decoration: none;
+  display: inline-block;
+  color: #000000;
+  outline: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+
+/* Template */
+
+.container {
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1rem;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -.5rem;
+	margin-right: -.5rem;
+}
+
+.col-8 {
+	width: 66.67%;
+	padding: 0 .5rem;
+}
+
+.col-6 {
+	width: 50%;
+	padding: 0 .5rem;
+}
+
+.col-4 {
+	width: 33.33%;
+	padding: 0 .5rem;
+}
+
+.col-3 {
+	width: 25%;
+	padding: 0 .5rem;
+}
+
+.f-display {
+	font-size: 36px;
+}
+
+.f-bold {
+	font-weight: bold;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.img-full {
+  width: 100%;
+	height: auto;
+}
+
+.img-full-h {
+  height: 100%;
+	width: auto;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.d-block {
+	display: block;
+}
+
+.no-mb {
+	margin-bottom: 0;
+}
+
+.no-mt {
+	margin-top: 0;
+}
+
+.mr-1rem {
+	margin-right: 1rem;
+}
+
+.mr-05rem {
+	margin-right: .5rem;
+}
+
+.ml-1rem {
+	margin-left: 1rem;
+}
+
+.ml-05rem {
+	margin-left: .5rem;
+}
+
+.mt-2rem {
+	margin-top: 2rem;
+}
+
+.mt-1rem {
+	margin-top: 1rem;
+}
+
+.mt-05rem {
+	margin-top: .5rem;
+}
+
+.mb-1rem {
+	margin-bottom: 1rem;
+}
+
+.mb-05rem {
+	margin-bottom: .5rem;
+}
+
+.form-mod {
+	padding: 1rem;
+	border-radius: 2px;
+	border: 0;
+	background: #fff;
+	outline: none;
+	width: 100%;
+	font-size: 14px;
+}
+
+.form-row {
+	display: flex;
+}
+
+.btn {
+	padding: 1rem;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 2px;
+	background: #000000;
+	color: #fff;
+	display: inline-block;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.t-right {
+	text-align: right;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+
+
+
+
+
+
+/* Edit */
+.navbar {
+	padding: 1rem 0;
+	background: #fff;
+	box-shadow: 0 3px 10px -8px rgba(0,0,0,.25);
+	width: 100%;
+	position: relative;
+	z-index: 128;
+}
+
+#brand {
+  width: 56px;
+}
+
+.nav-menu {
+  margin-left: auto;
+  letter-spacing: 1px;
+}
+
+.nav-btn {
+  padding: .5rem;
+  color: #666666;
+}
+
+.nav-btn:hover {
+  color: #000000;
+}
+
+.header_hero {
+	height: 450px;
+}
+
+.header_hero .header_hero_img {
+	object-fit: cover;
+	height: 100%
+}
+
+.hero_content {
+	bottom: 0;
+	left:0;
+	padding: 2rem 0;
+	color: #fff;
+}
+
+.sect_track {
+	background: #F7941D;
+	padding: 2rem 0;
+}
+
+.sect_cabang {
+	background: #fff;
+	padding: 2rem 0;
+}
+
+.sect_afiliasi {
+	background: #000000;
+	padding: 2rem 0;
+	color: #ffffff;
+}
+
+.afiliasi_card_cover {
+	background: #fff;
+	padding: 1rem;
+	border-radius: 2px;
+	color: #000000;
+}
+
+.table {
+	width: 100%;
+}
+
+.footer {
+	background: #000000;
+	color: #fff;
+}
+
+.me {
+	padding: 1rem;
+}
+
+.copy {
+	padding: 1rem;
+	background: #000000;
+	color: #fff;
+}
