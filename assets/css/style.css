@@ -184,8 +184,13 @@ p, h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
+.fw {
+	color: #fff;
+}
 
-
+.fb {
+ color: #181818
+}
 
 
 
@@ -231,7 +236,6 @@ p, h1, h2, h3, h4, h5, h6 {
 	bottom: 0;
 	left:0;
 	padding: 2rem 0;
-	color: #fff;
 }
 
 .sect_track {
@@ -247,7 +251,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .sect_afiliasi {
 	background: #000000;
 	padding: 2rem 0;
-	color: #ffffff;
 }
 
 .afiliasi_card_cover {
@@ -261,17 +264,21 @@ p, h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-.footer {
-	background: #000000;
-	color: #fff;
+.sect_syaratket {
+	padding: 2rem 0;
+	background: #F7941D;
 }
 
-.me {
-	padding: 1rem;
+.footer {
+	background: #000000;
+}
+
+.footer_inner {
+	padding: 2rem 0;
 }
 
 .copy {
 	padding: 1rem;
 	background: #000000;
-	color: #fff;
+	border-top: 2px solid #fff;
 }
