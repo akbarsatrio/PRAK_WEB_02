@@ -192,6 +192,19 @@ p, h1, h2, h3, h4, h5, h6 {
  color: #181818
 }
 
+.img-header_about {
+	height: 400px;
+	object-fit: contain;
+}
+
+.header-hero_about {
+	background: #fff;
+}
+
+.header-hero_about_inner {
+	padding: 2rem 0;
+}
+
 
 
 
